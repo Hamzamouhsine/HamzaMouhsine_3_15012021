@@ -1,0 +1,16 @@
+.location {
+  background-color: #f0efef;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+
+.fa-map-marker-alt {
+  padding-right: 7%;
+}
+
+.reservation {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+/*# sourceMappingURL=home.css.map */

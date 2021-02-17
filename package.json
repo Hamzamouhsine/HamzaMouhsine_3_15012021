@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "sitemap": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hamzamouhsine/HamzaMouhsine_3_15012021.git"
+  },
+  "keywords": [
+    "AMOUR"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hamzamouhsine/HamzaMouhsine_3_15012021/issues"
+  },
+  "homepage": "https://github.com/Hamzamouhsine/HamzaMouhsine_3_15012021#readme"
+}
