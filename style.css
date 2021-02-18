@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  font-family: 'Shrikhand', 'Courier New', Courier, monospace,sans-serif;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   text-align: center;
   font-size: 1em;
   height: 3em;
@@ -12,14 +12,13 @@ header {
 }
 
 section, footer {
-  font-family: 'Roboto', 'Courier New', Courier, monospace,sans-serif;
+  font-family: "Roboto", "Courier New", Courier, monospace, sans-serif;
 }
 
 section {
   padding-left: 1em;
   padding-right: 1em;
 }
-
 section a {
   color: black;
 }
@@ -28,7 +27,6 @@ footer {
   background: #353535;
   padding: 1em;
 }
-
 footer a {
   color: white;
 }
@@ -36,7 +34,7 @@ footer a {
 .logofooter {
   font-size: 1em;
   color: white;
-  font-family: 'Shrikhand', 'Courier New', Courier, monospace,sans-serif;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
 }
 
 .iconsfooter {
@@ -45,17 +43,15 @@ footer a {
 
 img {
   width: 100%;
-  height: 25%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  max-height: 120px;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 .err {
   width: 100%;
-  max-height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 120px;
+  object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -85,10 +81,10 @@ a {
 
 .explore {
   border-radius: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  color: white;
 }
 
 .functions {
@@ -101,22 +97,20 @@ a {
 }
 
 .stepsnumbers {
-  border-radius: 2em;
+  border-radius: 1em;
   width: 1em;
+  text-align: center;
   background-color: #9356DC;
   color: white;
   padding: 0.5em;
   font-size: 0.9em;
-  margin-left: -1.8em;
+  margin-left: -1.5em;
 }
 
 .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border-radius: 2em;
+  flex-wrap: wrap;
+  border-radius: 1.5em;
   padding: 0.5em;
   margin-bottom: 1em;
   margin-left: 2em;
@@ -129,26 +123,33 @@ a {
   padding: 1.1em;
 }
 
-.restaurants {
-  background: #f6f6f6;
+.restaurant {
+  background-color: #f0eeee;
   padding-bottom: 2em;
 }
 
 .card {
   border-radius: 2em;
   margin-bottom: 1em;
+  background-color: white;
+  width: 100%;
 }
 
-.text-card {
-  padding-top: 0.5em;
+.txt-card {
   padding-left: 0.5em;
   line-height: 0.5;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
+  height: 60px;
 }
 
-.fa-heart:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
+.love {
+  float: right;
+  padding-right: 1em;
+  font-size: 1.4em;
 }
+.love #hover {
+  background: black;
+}
+
 /*# sourceMappingURL=style.css.map */

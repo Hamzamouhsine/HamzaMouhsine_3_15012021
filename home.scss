@@ -23,6 +23,7 @@
     background: $deg;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+    color: white;
 }
 .functions
 {
@@ -35,19 +36,20 @@
 }
 .stepsnumbers
 {
-    border-radius: 2em;
+    border-radius: 1em;
     width: 1em;
+    text-align: center;
     background-color: $color-primary;
     color: white;
     padding: 0.5em;
     font-size: 0.9em;
-    margin-left: -1.8em;
+    margin-left: -1.5em;
 }
 .steps
 {
     display: flex;
     flex-wrap: wrap;
-    border-radius: 2em;
+    border-radius: 1.5em;
     padding: 0.5em;
     margin-bottom: 1em;
     margin-left: 2em;
@@ -59,25 +61,34 @@
     color: grey;
     padding: 1.1em;
 }
-.restaurants
+.restaurant
 {
-    background: $color-back;
+    background-color: rgb(240, 238, 238);
     padding-bottom: 2em;
 }
 .card
 {
     border-radius: 2em;
     margin-bottom: 1em;
+    background-color: white;
+    width: 100%;
+   
 }
-.text-card
+.txt-card
 {
-    padding-top: 0.5em;
     padding-left: 0.5em;
     line-height: 0.5;
     border-radius: 0px 0px 20px 20px;
-    background-color: white;
+    background-color:white;
+    height: 60px;
+  
 }
-.fa-heart:hover
-{
-    background: $deg;
+.love
+{ 
+    float: right;
+    padding-right: 1em;
+    font-size: 1.4em;
+    #hover{
+        background:black;
+    }
 }
