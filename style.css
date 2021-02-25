@@ -137,7 +137,7 @@ a {
 
 .txt-card {
   padding-left: 0.5em;
-  line-height: 0.5;
+  line-height: 0.2;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
   height: 60px;
@@ -149,7 +149,16 @@ a {
   font-size: 1.4em;
 }
 .love #hover {
-  background: black;
+  background-color: black;
+}
+
+.new-green {
+  color: #278870;
+  background-color: #99E2D0;
+  padding: 0.5em;
+  position: relative;
+  bottom: 6.5em;
+  left: 18.5em;
 }
 
 .picture {
@@ -166,6 +175,25 @@ a {
   border-radius: 40px 40px 0px 0px;
   margin-top: -3.5em;
   position: relative;
+  padding-bottom: 2em;
+}
+
+.header-menu {
+  display: inline;
+  height: 5em;
+  position: relative;
+  background-color: white;
+  font-size: 1.1em;
+  font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.header-menu .fa-arrow-left {
+  float: left;
+  margin-top: 0.3em;
+  margin-left: 1em;
+  margin-right: -1.5em;
+  font-size: 1.4em;
 }
 
 .top {
@@ -174,35 +202,47 @@ a {
 .top .name_menu {
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
   text-align: center;
-  font-size: 1em;
-  padding-top: 0.8em;
+  font-size: 1.4em;
+  padding-top: 0.5em;
+  padding-right: 5.5em;
 }
 .top .fa-heart {
   font-size: 1.5em;
-  padding-left: 6em;
-  padding-top: 0.8em;
+  text-align: right;
+  padding-top: 1.5em;
 }
 
 .choice {
   background-color: white;
   border-radius: 20px;
-  padding: 0.6em;
-  margin: 1em;
-  height: 60px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: 70px;
+  padding-left: 0.5em;
 }
 .choice .price {
   float: right;
   margin-right: 1em;
-  margin-top: -0.5em;
+  margin-top: -0.3em;
+}
+.choice .plate {
+  padding-top: 0.5em;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.7em;
 }
 .choice .subtitle {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  margin: 0 auto;
+  padding-bottom: 1em;
+  padding-right: 3em;
 }
 
 .sort {
-  padding: 0.6em;
+  border-bottom: 3px solid #99E2D0;
+  width: 10%;
 }
 
 .order {
@@ -212,7 +252,7 @@ a {
   color: white;
   text-align: center;
   width: 50%;
-  margin-left: 25%;
+  margin-left: 20%;
   font-size: 1.1em;
   font-family: "Roboto", "Courier New", Courier, monospace, sans-serif;
 }
