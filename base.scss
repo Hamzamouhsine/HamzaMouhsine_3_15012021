@@ -37,6 +37,10 @@ footer
     a{
         color: white;
     }
+    @media (min-width:1024px)
+    {
+        text-align: center;
+    }
 }
 .logofooter
 {

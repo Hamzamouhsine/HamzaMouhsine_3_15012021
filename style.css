@@ -30,6 +30,11 @@ footer {
 footer a {
   color: white;
 }
+@media (min-width: 1024px) {
+  footer {
+    text-align: center;
+  }
+}
 
 .logofooter {
   font-size: 1em;
@@ -64,19 +69,28 @@ a {
   background-color: #eaeaea;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: -15px;
   text-align: center;
 }
 
 .fa-map-marker-alt {
-  padding-right: 7%;
+  padding-right: 5%;
+}
+@media (min-width: 1024px) {
+  .fa-map-marker-alt {
+    padding-right: 1%;
+  }
 }
 
 .reservation {
   background-color: #f6f6f6;
   text-align: center;
-  padding: 2em;
   font-size: 1em;
+  padding: 13%;
+}
+@media (min-width: 1024px) {
+  .reservation {
+    padding: 5%;
+  }
 }
 
 .explore {
@@ -85,37 +99,65 @@ a {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   color: white;
+  width: 13em;
+  margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .explore {
+    max-width: 30%;
+    text-align: center;
+    margin-left: 35%;
+    font-size: xx-large;
+  }
 }
 
-.functions {
-  padding: 0.5em;
+.funtions {
   display: inline;
+  font-weight: bold;
 }
 
-.titlefunctions {
-  padding-left: 1em;
+.titre-funtions {
+  padding-left: 6%;
+}
+@media (min-width: 1024px) {
+  .titre-funtions {
+    text-align: center;
+    margin-right: 5%;
+  }
 }
 
 .stepsnumbers {
   border-radius: 1em;
-  width: 1em;
+  position: absolute;
   text-align: center;
   background-color: #9356DC;
   color: white;
-  padding: 0.5em;
+  padding: 0.5em 0.8em 0.5em 0.8em;
   font-size: 0.9em;
-  margin-left: -1.5em;
+  left: 4%;
+}
+@media (min-width: 1024px) {
+  .stepsnumbers {
+    display: none;
+  }
 }
 
 .steps {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  width: 80%;
   border-radius: 1.5em;
-  padding: 0.5em;
-  margin-bottom: 1em;
-  margin-left: 2em;
-  margin-right: 1em;
+  padding: 0.5em 5% 0.5em 5%;
+  margin: 0em 0em 1em 2em;
   background: #f6f6f6;
+}
+@media (min-width: 1024px) {
+  .steps {
+    display: inline-flex;
+    padding: 0.5em 2% 0.5em 2%;
+    width: 20%;
+    text-align: center;
+    margin: 2% 0% 2% 7%;
+  }
 }
 
 .stepicons {
@@ -125,14 +167,30 @@ a {
 
 .restaurant {
   background-color: #f0eeee;
-  padding-bottom: 2em;
+  padding: 2em 1em 2em 1em;
 }
 
+@media (min-width: 1024px) {
+  .title-restaurant {
+    text-align: left;
+    padding: 3% 0% 3% 10%;
+    font-size: xx-large;
+  }
+}
 .card {
   border-radius: 2em;
   margin-bottom: 1em;
   background-color: white;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .card {
+    display: inline-flex;
+    flex-direction: column;
+    width: 35%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
 }
 
 .txt-card {
@@ -140,7 +198,7 @@ a {
   line-height: 0.2;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
-  height: 60px;
+  height: 50px;
 }
 
 .love {
@@ -156,18 +214,37 @@ a {
   color: #278870;
   background-color: #99E2D0;
   padding: 0.5em;
-  position: relative;
-  bottom: 6.5em;
-  left: 18.5em;
+  margin: 1em;
+  right: 5%;
+  position: absolute;
+}
+@media (min-width: 1024px) {
+  .new-green {
+    display: none;
+  }
 }
 
 .picture {
   width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .picture {
+    object-fit: cover;
+    height: 30em;
+  }
 }
 
 .picture-err {
   width: 100%;
   height: 190px;
+  object-fit: cover;
+}
+@media (min-width: 1024px) {
+  .picture-err {
+    object-fit: cover;
+    height: 30em;
+  }
 }
 
 .frenchmenu {
@@ -197,19 +274,21 @@ a {
 }
 
 .top {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
 }
 .top .name_menu {
   font-family: "Shrikhand", "Courier New", Courier, monospace, sans-serif;
-  text-align: center;
+  text-align: left;
   font-size: 1.4em;
   padding-top: 0.5em;
-  padding-right: 5.5em;
+  padding-right: 25%;
 }
 .top .fa-heart {
+  position: absolute;
   font-size: 1.5em;
-  text-align: right;
-  padding-top: 1.5em;
+  top: 3%;
+  right: 7%;
 }
 
 .choice {
@@ -228,8 +307,9 @@ a {
 .choice .plate {
   padding-top: 0.5em;
   margin: 0 auto;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.7em;
+  padding-right: 12%;
 }
 .choice .subtitle {
   text-overflow: ellipsis;
@@ -242,7 +322,7 @@ a {
 
 .sort {
   border-bottom: 3px solid #99E2D0;
-  width: 10%;
+  width: 2.5em;
 }
 
 .order {
@@ -255,6 +335,97 @@ a {
   margin-left: 20%;
   font-size: 1.1em;
   font-family: "Roboto", "Courier New", Courier, monospace, sans-serif;
+}
+@media (min-width: 1024px) {
+  .order {
+    width: 40%;
+    margin-left: 29%;
+  }
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9) repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lettre {
+  color: #99E2D0;
+  font-family: "shrikhand", "Courier New", Courier, monospace, sans-serif;
+  font-size: 30px;
+  letter-spacing: 15px;
+  margin-bottom: 50px;
+  animation: flash 1.2s linear both;
+}
+@media (min-width: 1024px) {
+  .lettre {
+    font-size: 80px;
+  }
+}
+
+@keyframes flash {
+  0% {
+    color: #9356DC;
+    text-shadow: 0 0 7PX #fff900;
+  }
+  70% {
+    color: #FF79DA;
+    text-shadow: none;
+  }
+  100% {
+    color: #99E2D0;
+    text-shadow: 0 0 7PX #fff900;
+  }
+}
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.loader {
+  z-index: 9999;
+  position: fixed;
+  animation: stop 6s both;
+}
+
+@keyframes stop {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

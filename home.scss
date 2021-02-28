@@ -4,18 +4,25 @@
     background-color: rgb(234, 234, 234);
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: -15px;
     text-align: center;
 }
 .fa-map-marker-alt{
-    padding-right: 7%;
+    padding-right: 5%;
+    @media (min-width:1024px){
+        padding-right: 1%;
+    }
+
 }
 
 .reservation{  
     background-color: $color-back;
-    text-align: center;
-    padding: 2em;
+    text-align:center;
     font-size: 1em;
+    padding: 13%;
+    @media (min-width:1024px)
+    {
+        padding: 5%;
+    }
 }
 .explore
 {
@@ -24,47 +31,86 @@
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     color: white;
+    width: 13em;
+    margin: 0 auto;
+    
+    @media (min-width:1024px) {
+        max-width: 30%;
+        text-align: center;
+        margin-left: 35%;
+        font-size: xx-large;
+
 }
-.functions
+}
+.funtions
 {
-    padding: 0.5em;
     display: inline;
+    font-weight: bold;
+
 }
-.titlefunctions
+.titre-funtions
 {
-    padding-left: 1em;
+    padding-left: 6%;
+    @media (min-width:1024px)
+    {
+        text-align:center;
+        margin-right: 5%;
+    }
+
 }
 .stepsnumbers
 {
     border-radius: 1em;
-    width: 1em;
+    position: absolute;
     text-align: center;
     background-color: $color-primary;
     color: white;
-    padding: 0.5em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
     font-size: 0.9em;
-    margin-left: -1.5em;
+    left: 4%;
+    @media (min-width:1024px)
+    {
+       display: none;
+    }
+
 }
 .steps
 {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    width: 80%;
     border-radius: 1.5em;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    margin-left: 2em;
-    margin-right: 1em;
+    padding: 0.5em 5% 0.5em 5%;
+    margin: 0em 0em 1em 2em;
     background: $color-back;
+    @media (min-width:1024px)
+    {
+       display: inline-flex;
+       padding: 0.5em 2% 0.5em 2%;
+       width: 20%;
+       text-align: center;
+       margin: 2% 0% 2% 7%;
+    }
 }
 .stepicons
 {
     color: grey;
     padding: 1.1em;
 }
+
 .restaurant
 {
     background-color: rgb(240, 238, 238);
-    padding-bottom: 2em;
+    padding: 2em 1em 2em 1em;
+}
+@media (min-width:1024px)
+{  
+
+.title-restaurant{
+    text-align: left;
+    padding: 3% 0% 3% 10%;
+    font-size: xx-large;
+}
+    
 }
 .card
 {
@@ -72,6 +118,14 @@
     margin-bottom: 1em;
     background-color: white;
     width: 100%;
+    @media (min-width:1024px)
+    {
+        display: inline-flex;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 10%;
+        margin-bottom: 5%;;
+    }
    
 }
 .txt-card
@@ -80,8 +134,7 @@
     line-height: 0.2;
     border-radius: 0px 0px 20px 20px;
     background-color:white;
-    height: 60px;
-  
+    height: 50px;
 }
 .love
 { 
@@ -96,8 +149,11 @@
     color: darken($color-tertiary,40%);
     background-color: $color-tertiary;
     padding: 0.5em;
-    position: relative;
-    bottom:6.5em;
-    left: 18.5em;
-
+    margin: 1em;
+    right: 5%;
+    position: absolute;
+    @media (min-width:1024px)
+    {
+        display: none;
+    }
 }

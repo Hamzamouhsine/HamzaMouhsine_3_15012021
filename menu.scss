@@ -1,11 +1,23 @@
 .picture 
 {
     width: 100%;
+    object-fit: cover;
+    @media (min-width:1024px)
+    {
+        object-fit: cover;
+        height: 30em;
+    }
 }
 .picture-err 
 {
     width: 100%;
     height: 190px;
+    object-fit: cover;
+    @media (min-width:1024px)
+    {
+        object-fit: cover;
+        height: 30em;
+    }
 }
 .frenchmenu
 {
@@ -34,18 +46,20 @@
 }
 .top
 {
-    display: inline-flex;
+    display:flex;
+    flex-direction: row;
     .name_menu {
     font-family: 'Shrikhand', 'Courier New', Courier, monospace,sans-serif;
-    text-align:center;
+    text-align:left;
     font-size: 1.4em;
     padding-top: 0.5em;
-    padding-right: 5.5em;
+    padding-right: 25%;
     }
     .fa-heart{
+    position: absolute;
     font-size: 1.5em;
-    text-align: right;
-    padding-top: 1.5em;
+    top: 3%;
+    right: 7%;
     }
 }
 
@@ -64,8 +78,10 @@
     .plate{
         padding-top: 0.5em;
         margin: 0 auto;
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.7em;
+        padding-right: 12%;
+        
     }
     .subtitle
     {
@@ -79,7 +95,7 @@
 }
 .sort{
         border-bottom: 3px solid $color-tertiary;
-        width: 10%;
+        width: 2.5em;
 }
 .order
 {
@@ -92,4 +108,10 @@
     margin-left: 20%;
     font-size: 1.1em;
     font-family: $font-roboto;
+    @media (min-width:1024px)
+    {
+        width: 40%;
+        margin-left: 29%;
+    }
 }
+
