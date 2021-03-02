@@ -45,7 +45,8 @@
 .funtions
 {
     display: inline;
-    font-weight: bold;
+    font-weight:bold;
+    font-size: x-large;
 
 }
 .titre-funtions
@@ -138,12 +139,17 @@
 }
 .love
 { 
-    float: right;
-    padding-right: 1em;
-    font-size: 1.4em;
-    #hover{
-        background-color:black;
-    }
+    position:absolute;
+    background: black;
+    right: 9.6%;
+    top: 155%;
+}
+.love-color
+{ 
+    position:relative;
+    left: 90%;
+    bottom: 40%;
+    font-size: 1.2em;
 }
 .new-green{
     color: darken($color-tertiary,40%);

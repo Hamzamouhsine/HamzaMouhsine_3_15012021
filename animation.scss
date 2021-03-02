@@ -1,21 +1,22 @@
-.loader
+
+.loading
 {
-    position: fixed;
+    z-index:10000;
     width: 100%;
     height: 100%;
-    background:hsla(0,0%,100%,.9) repeat ;
+    background:hsla(0,0%,100%,.9);
     display: flex;
     justify-content: center;
     align-items: center;    
 }
-.lettre
+.lettre 
 {
     color:$color-tertiary;
     font-family: 'shrikhand', 'Courier New', Courier, monospace,sans-serif;
     font-size: 30px;
     letter-spacing: 15px;
     margin-bottom: 50px;
-    animation: flash 1.2s linear both;
+    animation: flash 2s linear both;
     @media (min-width:1024px)
     {
        font-size: 80px;
@@ -23,7 +24,7 @@
 }
 @keyframes flash {
    0%{ color:$color-primary;
-    text-shadow: 0 0 7PX #fff900;
+    text-shadow: 0 0 7px #fff900;
    }
    70% {
     color:$color-secondary;
@@ -32,11 +33,14 @@
 
    100%{
     color:$color-tertiary;
-    text-shadow: 0 0 7PX #fff900;
+    text-shadow: 0 0 7px #fff900;
    }
-  
-   
+   0%{opacity: 1;}
+   100%{opacity: 0;}   
 }
+
+
+
 .lettre:nth-child(1){
     animation-delay: 0.1s;
 }
@@ -61,12 +65,58 @@
 .lettre:nth-child(8){
     animation-delay: 0.8s;
 }
-.loader{
-    z-index: 9999;
-    position: fixed;
-    animation: stop 6s both;
+
+
+
+.menu:nth-child(2){
+    animation: itemAppear 1s linear;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    animation-delay:  0.1s;
 }
-@keyframes stop {
-    0%{opacity: 1;}
-    100%{opacity: 0;}
+.menu:nth-child(3){
+    animation: itemAppear 1s linear;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    animation-delay: 0.4s;
+}
+.menu:nth-child(4){
+    animation: itemAppear 1s linear;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    animation-delay: 0.7s;
+}
+@keyframes itemAppear{
+    0% {
+        transform: scale(0);
+    }
+      100% {
+        transform: scale(1);
+      }
+      
+}
+.slide{
+    width: 0%;
+    display: flex;
+    color: white;
+    font-size: 0%;
+}
+
+.choice:hover{
+    .slide{
+    width:5%;
+    color: white;
+    background-color: $color-tertiary;
+    font-size: 1.5em;
+    padding: 1em;
+    border-radius: 0px 20px 20px 0px;
+    float: right;
+    transition:.3s  ;
+    .fa-check-circle{
+    transform: rotate(360deg);
+    transition-duration: .2s;
+    color: white; 
+    float: right;
+    }
+}
 }
