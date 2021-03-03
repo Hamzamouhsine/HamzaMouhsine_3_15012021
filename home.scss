@@ -30,9 +30,16 @@
     background: $deg;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    color: white;
     width: 13em;
     margin: 0 auto;
+    p{
+        color: white;
+    }
+    &:hover{
+        box-shadow: 0 0 8px grey;
+        opacity: 0.9;
+        cursor: pointer;
+    }
     
     @media (min-width:1024px) {
         max-width: 30%;
@@ -52,6 +59,7 @@
 .titre-funtions
 {
     padding-left: 6%;
+    margin:  0% 0% 5% 0% ;
     @media (min-width:1024px)
     {
         text-align:center;
@@ -61,14 +69,15 @@
 }
 .stepsnumbers
 {
-    border-radius: 1em;
     position: absolute;
+    border-radius: 1em;
     text-align: center;
+    justify-content: center;
     background-color: $color-primary;
     color: white;
-    padding: 0.5em 0.8em 0.5em 0.8em;
-    font-size: 0.9em;
-    left: 4%;
+    padding: 0.4em 0.6em 0.2em 0.6em;
+    font-size: 0.7em;
+    left: 0.7rem;
     @media (min-width:1024px)
     {
        display: none;
@@ -78,25 +87,41 @@
 .steps
 {
     display: inline-flex;
+    font-size: 0.7em;
     width: 80%;
+    height: 2em;
     border-radius: 1.5em;
-    padding: 0.5em 5% 0.5em 5%;
-    margin: 0em 0em 1em 2em;
+    padding: 0.5em 5% 0.8em 5%;
+    margin: 0em 0em 1em 1em;
     background: $color-back;
+    &:hover{
+        box-shadow: 0 0 8px rgb(238,238,238,);
+        background: rgb(243, 237, 253);
+        cursor: pointer;
+        .stepicons{
+            color: $color-primary;
+        }
+    }
+
     @media (min-width:1024px)
     {
        display: inline-flex;
-       padding: 0.5em 2% 0.5em 2%;
+       padding: 0.5em 2% 0.5em 0%;
        width: 20%;
        text-align: center;
        margin: 2% 0% 2% 7%;
+    }
+    .steptext{
+        margin: 0%;
+        padding-top: 0.5em;
     }
 }
 .stepicons
 {
     color: grey;
-    padding: 1.1em;
+    padding: 0.6em 1.1em 1em 1.1em;
 }
+
 
 .restaurant
 {
@@ -110,6 +135,9 @@
     text-align: left;
     padding: 3% 0% 3% 10%;
     font-size: xx-large;
+}
+.nameplate{
+    font-weight: bold;
 }
     
 }
@@ -137,19 +165,21 @@
     background-color:white;
     height: 50px;
 }
-.love
+.nameplate{
+    font-weight: bold;
+}
+.namesubplate{
+    font-weight: lighter;
+}
+.btn__love
 { 
     position:absolute;
     background: black;
-    right: 9.6%;
-    top: 155%;
 }
-.love-color
+.btn__like
 { 
-    position:relative;
-    left: 90%;
-    bottom: 40%;
-    font-size: 1.2em;
+    position:absolute;
+    
 }
 .new-green{
     color: darken($color-tertiary,40%);

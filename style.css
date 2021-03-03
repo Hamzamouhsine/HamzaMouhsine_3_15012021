@@ -98,9 +98,16 @@ a {
   background: linear-gradient(#FF79DA, #9356DC);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  color: white;
   width: 13em;
   margin: 0 auto;
+}
+.explore p {
+  color: white;
+}
+.explore:hover {
+  box-shadow: 0 0 8px grey;
+  opacity: 0.9;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .explore {
@@ -119,6 +126,7 @@ a {
 
 .titre-funtions {
   padding-left: 6%;
+  margin: 0% 0% 5% 0%;
 }
 @media (min-width: 1024px) {
   .titre-funtions {
@@ -128,14 +136,15 @@ a {
 }
 
 .stepsnumbers {
-  border-radius: 1em;
   position: absolute;
+  border-radius: 1em;
   text-align: center;
+  justify-content: center;
   background-color: #9356DC;
   color: white;
-  padding: 0.5em 0.8em 0.5em 0.8em;
-  font-size: 0.9em;
-  left: 4%;
+  padding: 0.4em 0.6em 0.2em 0.6em;
+  font-size: 0.7em;
+  left: 0.7rem;
 }
 @media (min-width: 1024px) {
   .stepsnumbers {
@@ -145,25 +154,39 @@ a {
 
 .steps {
   display: inline-flex;
+  font-size: 0.7em;
   width: 80%;
+  height: 2em;
   border-radius: 1.5em;
-  padding: 0.5em 5% 0.5em 5%;
-  margin: 0em 0em 1em 2em;
+  padding: 0.5em 5% 0.8em 5%;
+  margin: 0em 0em 1em 1em;
   background: #f6f6f6;
+}
+.steps:hover {
+  box-shadow: 0 0 8px #eeeeee;
+  background: #f3edfd;
+  cursor: pointer;
+}
+.steps:hover .stepicons {
+  color: #9356DC;
 }
 @media (min-width: 1024px) {
   .steps {
     display: inline-flex;
-    padding: 0.5em 2% 0.5em 2%;
+    padding: 0.5em 2% 0.5em 0%;
     width: 20%;
     text-align: center;
     margin: 2% 0% 2% 7%;
   }
 }
+.steps .steptext {
+  margin: 0%;
+  padding-top: 0.5em;
+}
 
 .stepicons {
   color: grey;
-  padding: 1.1em;
+  padding: 0.6em 1.1em 1em 1.1em;
 }
 
 .restaurant {
@@ -176,6 +199,10 @@ a {
     text-align: left;
     padding: 3% 0% 3% 10%;
     font-size: xx-large;
+  }
+
+  .nameplate {
+    font-weight: bold;
   }
 }
 .card {
@@ -202,18 +229,21 @@ a {
   height: 50px;
 }
 
-.love {
-  position: absolute;
-  background: black;
-  right: 9.6%;
-  top: 155%;
+.nameplate {
+  font-weight: bold;
 }
 
-.love-color {
-  position: relative;
-  left: 90%;
-  bottom: 40%;
-  font-size: 1.2em;
+.namesubplate {
+  font-weight: lighter;
+}
+
+.btn__love {
+  position: absolute;
+  background: black;
+}
+
+.btn__like {
+  position: absolute;
 }
 
 .new-green {
@@ -273,6 +303,7 @@ a {
   margin-left: 1em;
   margin-right: -1.5em;
   font-size: 1.4em;
+  color: black;
 }
 
 .top {
@@ -314,6 +345,9 @@ a {
   font-size: 1.1em;
   line-height: 1.7em;
   padding-right: 12%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .choice .subtitle {
   text-overflow: ellipsis;
@@ -360,7 +394,6 @@ a {
 }
 
 .loading {
-  z-index: 10000;
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
@@ -385,15 +418,15 @@ a {
 
 @keyframes flash {
   0% {
-    color: #9356DC;
+    color: #99E2D0;
     text-shadow: 0 0 7px #fff900;
   }
-  70% {
-    color: #FF79DA;
+  50% {
+    color: #9356DC;
     text-shadow: none;
   }
   100% {
-    color: #99E2D0;
+    color: #FF79DA;
     text-shadow: 0 0 7px #fff900;
   }
   0% {
@@ -408,31 +441,31 @@ a {
 }
 
 .lettre:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.25s;
 }
 
 .lettre:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.75s;
 }
 
 .lettre:nth-child(4) {
-  animation-delay: 0.4s;
+  animation-delay: 1s;
 }
 
 .lettre:nth-child(5) {
-  animation-delay: 0.5s;
+  animation-delay: 1.25s;
 }
 
 .lettre:nth-child(6) {
-  animation-delay: 0.6s;
+  animation-delay: 1.5s;
 }
 
 .lettre:nth-child(7) {
-  animation-delay: 0.7s;
+  animation-delay: 1.75s;
 }
 
 .lettre:nth-child(8) {
-  animation-delay: 0.8s;
+  animation-delay: 2s;
 }
 
 .menu:nth-child(2) {
@@ -469,6 +502,7 @@ a {
   display: flex;
   color: white;
   font-size: 0%;
+  cursor: pointer;
 }
 
 .choice:hover .slide {
