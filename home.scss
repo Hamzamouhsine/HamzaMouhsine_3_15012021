@@ -147,6 +147,9 @@
     margin-bottom: 1em;
     background-color: white;
     width: 100%;
+    box-shadow: 0 0 7px lightgrey;
+    opacity: 0.9;
+    cursor: pointer;
     @media (min-width:1024px)
     {
         display: inline-flex;
@@ -167,19 +170,11 @@
 }
 .nameplate{
     font-weight: bold;
+    color: black;
 }
 .namesubplate{
     font-weight: lighter;
-}
-.btn__love
-{ 
-    position:absolute;
-    background: black;
-}
-.btn__like
-{ 
-    position:absolute;
-    
+    color: black;
 }
 .new-green{
     color: darken($color-tertiary,40%);

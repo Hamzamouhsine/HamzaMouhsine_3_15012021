@@ -19,9 +19,6 @@ section {
   padding-left: 1em;
   padding-right: 1em;
 }
-section a {
-  color: black;
-}
 
 footer {
   background: #353535;
@@ -210,6 +207,9 @@ a {
   margin-bottom: 1em;
   background-color: white;
   width: 100%;
+  box-shadow: 0 0 7px lightgrey;
+  opacity: 0.9;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .card {
@@ -231,19 +231,12 @@ a {
 
 .nameplate {
   font-weight: bold;
+  color: black;
 }
 
 .namesubplate {
   font-weight: lighter;
-}
-
-.btn__love {
-  position: absolute;
-  background: black;
-}
-
-.btn__like {
-  position: absolute;
+  color: black;
 }
 
 .new-green {
@@ -331,6 +324,8 @@ a {
   margin-bottom: 1em;
   height: 70px;
   padding-left: 0.5em;
+  box-shadow: 0 0 7px lightgrey;
+  cursor: pointer;
 }
 .choice .price {
   float: right;
@@ -395,7 +390,6 @@ a {
 
 .loading {
   width: 100%;
-  height: 100%;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
@@ -509,7 +503,7 @@ a {
   width: 5%;
   color: white;
   background-color: #99E2D0;
-  font-size: 1.5em;
+  font-size: 1.49em;
   padding: 1em;
   border-radius: 0px 20px 20px 0px;
   float: right;
@@ -520,6 +514,44 @@ a {
   transition-duration: 0.2s;
   color: white;
   float: right;
+}
+
+.heart {
+  position: relative;
+  right: 9%;
+  top: -69%;
+  display: flex;
+  float: right;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+.heart .love {
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 0;
+  color: black;
+}
+.heart .love :hover {
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+.heart .like {
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 1;
+  color: #FF79DA;
+}
+.heart .like :hover {
+  color: #9356DC;
+}
+@keyframes myheart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
