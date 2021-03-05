@@ -1,11 +1,16 @@
 
 .loading
 {
+    position:fixed;
+    z-index:9999;
     width: 100%;
+    height:100%;
     background:hsla(0,0%,100%,.9);
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center; 
+    animation-delay:2s;
+    animation: ciao 3s both; 
 }
 .lettre 
 {
@@ -14,7 +19,7 @@
     font-size: 30px;
     letter-spacing: 15px;
     margin-bottom: 50px;
-    animation: flash 2s linear both;
+    animation: flash 3s linear both;
     @media (min-width:1024px)
     {
        font-size: 80px;
@@ -33,8 +38,13 @@
     color:$color-secondary;
     text-shadow: 0 0 7px #fff900;
    }
-   0%{opacity: 1;}
-   100%{opacity: 0;}   
+}
+@keyframes ciao {
+    0%{opacity: 1;}
+   100%{opacity: 0;
+    display:none;
+       z-index:-100;}   
+
 }
 
 
@@ -145,6 +155,7 @@
     z-index: 1;
     color: #FF79DA;
     :hover{
+    -webkit-background-clip:text;
     color:#9356DC;
     }
 }
