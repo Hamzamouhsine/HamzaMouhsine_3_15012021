@@ -1,19 +1,20 @@
+
 .location 
 {
-    font-size: 1.2em;
+    font-size:1.2em;
+    justify-content: center;
     background-color: rgb(234, 234, 234);
     padding-top: 2px;
     padding-bottom: 2px;
     text-align: center;
-}
-.fa-map-marker-alt{
-    padding-right: 5%;
+    .fa-map-marker-alt{
+    padding-right: 3%;
+    padding-bottom: 1px;
     @media (min-width:1024px){
-        padding-right: 1%;
+            padding-right: 1%;
     }
-
 }
-
+}
 .reservation{  
     background-color: $color-back;
     text-align:center;
@@ -43,8 +44,9 @@
     
     @media (min-width:1024px) {
         width: 12em;
+        display:flex;
         text-align: center;
-        margin-left: 35%;
+        justify-content: center;
         font-size: x-large;
         p{
             margin:0 auto;
@@ -98,8 +100,9 @@
     padding: 0.5em 5% 0.8em 5%;
     margin: 0em 0em 1em 1em;
     background: $color-back;
+    box-shadow: 0 0 10px rgb(238,238,238,);
     &:hover{
-        box-shadow: 0 0 8px rgb(238,238,238,);
+        box-shadow: 0 0 15px rgb(238,238,238,);
         background: rgb(243, 237, 253);
         cursor: pointer;
         .stepicons{

@@ -121,10 +121,10 @@
     padding: 1em;
     border-radius: 0px 20px 20px 0px;
     float: right;
-    transition:.3s;
+    transition:.3s ease-out;
     .fa-check-circle{
-    transform: rotate(360deg);
-    transition-duration: .2s;
+    transform:rotate(1turn);
+    transition-duration: 1s;
     color: white; 
     float: right;
     }

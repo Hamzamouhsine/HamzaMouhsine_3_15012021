@@ -63,17 +63,18 @@ a {
 
 .location {
   font-size: 1.2em;
+  justify-content: center;
   background-color: #eaeaea;
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: center;
 }
-
-.fa-map-marker-alt {
-  padding-right: 5%;
+.location .fa-map-marker-alt {
+  padding-right: 3%;
+  padding-bottom: 1px;
 }
 @media (min-width: 1024px) {
-  .fa-map-marker-alt {
+  .location .fa-map-marker-alt {
     padding-right: 1%;
   }
 }
@@ -109,8 +110,9 @@ a {
 @media (min-width: 1024px) {
   .explore {
     width: 12em;
+    display: flex;
     text-align: center;
-    margin-left: 35%;
+    justify-content: center;
     font-size: x-large;
   }
   .explore p {
@@ -162,9 +164,10 @@ a {
   padding: 0.5em 5% 0.8em 5%;
   margin: 0em 0em 1em 1em;
   background: #f6f6f6;
+  box-shadow: 0 0 10px #eeeeee;
 }
 .steps:hover {
-  box-shadow: 0 0 8px #eeeeee;
+  box-shadow: 0 0 15px #eeeeee;
   background: #f3edfd;
   cursor: pointer;
 }
@@ -520,11 +523,11 @@ a {
   padding: 1em;
   border-radius: 0px 20px 20px 0px;
   float: right;
-  transition: 0.3s;
+  transition: 0.3s ease-out;
 }
 .choice:hover .slide .fa-check-circle {
-  transform: rotate(360deg);
-  transition-duration: 0.2s;
+  transform: rotate(1turn);
+  transition-duration: 1s;
   color: white;
   float: right;
 }
