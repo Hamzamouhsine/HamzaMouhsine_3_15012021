@@ -11,7 +11,7 @@ header {
   background-color: white;
 }
 
-section, footer {
+section, footer, .location {
   font-family: "Roboto", "Courier New", Courier, monospace, sans-serif;
 }
 
@@ -556,7 +556,6 @@ a {
 .heart:hover .plein {
   animation: love 1s ease-in-out;
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
 }
 .heart:hover .vide {
