@@ -147,7 +147,7 @@ a {
   color: white;
   padding: 0.4em 0.6em 0.2em 0.6em;
   font-size: 0.7em;
-  left: 0.7rem;
+  left: 4%;
 }
 @media (min-width: 1024px) {
   .stepsnumbers {
@@ -162,7 +162,7 @@ a {
   height: 2em;
   border-radius: 1.5em;
   padding: 0.5em 5% 0.8em 5%;
-  margin: 0em 0em 1em 1em;
+  margin: 0% 0% 5% 5%;
   background: #f6f6f6;
   box-shadow: 0 0 10px #eeeeee;
 }
@@ -338,7 +338,7 @@ a {
 }
 .choice .subtitle {
   font-size: 0.8em;
-  font-weight: lighter;
+  font-weight: 300;
   position: absolute;
   white-space: nowrap;
   overflow: hidden;
@@ -521,7 +521,7 @@ a {
   display: flex;
   color: white;
   font-size: 0%;
-  transition: 0.1s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .choice:hover {
