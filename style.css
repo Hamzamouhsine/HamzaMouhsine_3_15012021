@@ -149,11 +149,6 @@ a {
   font-size: 0.7em;
   left: 4%;
 }
-@media (min-width: 1024px) {
-  .stepsnumbers {
-    display: none;
-  }
-}
 
 .steps {
   display: inline-flex;
@@ -174,25 +169,18 @@ a {
 .steps:hover .stepicons {
   color: #9356DC;
 }
-@media (min-width: 1024px) {
-  .steps {
-    display: inline-flex;
-    padding: 0.5em 2% 0.5em 0%;
-    width: 20%;
-    text-align: center;
-    margin: 2% 0% 2% 9%;
-  }
-}
 .steps .steptext {
   text-overflow: ellipsis;
   overflow: hidden;
   margin: 0%;
-  padding-top: 0.8em;
+  padding-top: 0.6em;
+  padding-left: 0.1em;
+  justify-content: center;
 }
 
 .stepicons {
   color: grey;
-  padding: 0.9em 1.1em 1em 1.1em;
+  padding: 0.8em 1.1em 1em 1.1em;
 }
 
 .restaurant {
@@ -244,7 +232,7 @@ a {
 }
 
 .namesubplate {
-  font-weight: lighter;
+  font-weight: 300;
   color: black;
 }
 
@@ -521,7 +509,7 @@ a {
   display: flex;
   color: white;
   font-size: 0%;
-  transition: 0.4s ease-in-out;
+  transition: 0.6s;
 }
 
 .choice:hover {
@@ -541,10 +529,27 @@ a {
 }
 .choice:hover .slide .fa-check-circle {
   justify-content: center;
-  transform: rotate(1turn);
-  transition: 0.8s;
+  animation-duration: 0.5s;
+  animation-name: slidein;
 }
 
+@keyframes slidein {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: rotate(135deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .txt-choice {
   width: 100%;
 }
